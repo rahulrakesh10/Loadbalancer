@@ -211,17 +211,7 @@ The algorithm is thread-safe using mutexes to handle concurrent requests.
 4. **Fault Tolerance**: Health checks and automatic failover
 5. **System Design**: Load balancing architecture and patterns
 
-## 🎯 Resume Points
 
-This project demonstrates:
-
-- ✅ Systems programming in Go
-- ✅ Concurrent programming with goroutines and channels
-- ✅ Network programming and HTTP reverse proxying
-- ✅ Thread-safe data structures and algorithms
-- ✅ Health monitoring and fault tolerance
-- ✅ Docker containerization
-- ✅ Production-ready code structure
 
 ## 🔧 Advanced Features
 
