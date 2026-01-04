@@ -210,35 +210,3 @@ The algorithm is thread-safe using mutexes to handle concurrent requests.
 3. **Networking**: HTTP reverse proxy using `net/http/httputil`
 4. **Fault Tolerance**: Health checks and automatic failover
 5. **System Design**: Load balancing architecture and patterns
-
-
-
-## 🔧 Advanced Features
-
-### Custom Health Check Interval
-
-Modify the health check interval in `balancer/proxy.go`:
-
-```go
-healthCheck := NewHealthChecker(backends, 10*time.Second, 5*time.Second)
-//                                 ^interval  ^timeout
-```
-
-### Adding More Backend Servers
-
-1. Add server configuration to `config/servers.json`
-2. Start the new backend server:
-```bash
-go run cmd/backend/main.go -port=9004
-```
-
-### Implementing Other Algorithms
-
-The codebase is structured to easily add new load balancing algorithms:
-- Least Connections
-- Weighted Round Robin
-- Random Selection
-
-## 🐛 Troubleshooting
-
-
