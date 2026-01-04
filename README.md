@@ -241,41 +241,4 @@ The codebase is structured to easily add new load balancing algorithms:
 
 ## 🐛 Troubleshooting
 
-### Backend servers not responding
 
-1. Check if backend servers are running:
-```bash
-curl http://localhost:9001/health
-```
-
-2. Verify configuration in `config/servers.json`
-
-3. Check load balancer logs for health check errors
-
-### Port already in use
-
-Change the port in configuration or use command-line flags:
-```bash
-go run main.go -port=8081
-```
-
-## 📝 License
-
-This project is open source and available for educational purposes.
-
-## 🤝 Contributing
-
-Contributions are welcome! Feel free to submit issues or pull requests.
-
-## 📚 Resources
-
-- [Go Documentation](https://golang.org/doc/)
-- [HTTP Reverse Proxy](https://golang.org/pkg/net/http/httputil/)
-- [Load Balancing Algorithms](https://kemptechnologies.com/load-balancer/load-balancing-algorithms-techniques/)
-
----
-
-**Built with ❤️ using Go**
-
-
-# Loadbalancer
