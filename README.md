@@ -203,10 +203,3 @@ The algorithm is thread-safe using mutexes to handle concurrent requests.
 - Shared state (server selection) is protected with mutexes
 - Supports thousands of concurrent connections
 
-## 📊 Key Concepts Demonstrated
-
-1. **Concurrency**: Goroutines and channels for concurrent request handling
-2. **Thread Safety**: Mutexes for protecting shared state
-3. **Networking**: HTTP reverse proxy using `net/http/httputil`
-4. **Fault Tolerance**: Health checks and automatic failover
-5. **System Design**: Load balancing architecture and patterns
