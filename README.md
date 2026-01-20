@@ -190,14 +190,7 @@ The load balancer uses a round-robin algorithm to distribute requests:
 
 The algorithm is thread-safe using mutexes to handle concurrent requests.
 
-### Health Checks
 
-- Health checks run every 10 seconds
-- Each backend is checked via `/health` endpoint
-- Unhealthy servers are automatically skipped
-- Failed servers are retried on the next health check cycle
-
-### Concurrency
 
 - Each HTTP request is handled in its own goroutine
 - Shared state (server selection) is protected with mutexes
