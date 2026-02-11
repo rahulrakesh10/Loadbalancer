@@ -129,11 +129,3 @@ The load balancer uses a round-robin algorithm to distribute requests:
 - Request 3 → Server 3
 - Request 4 → Server 1 (cycles back)
 
-The algorithm is thread-safe using mutexes to handle concurrent requests.
-
-
-
-- Each HTTP request is handled in its own goroutine
-- Shared state (server selection) is protected with mutexes
-- Supports thousands of concurrent connections
-
