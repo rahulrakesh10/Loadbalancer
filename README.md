@@ -115,10 +115,6 @@ Start everything with Docker Compose:
 docker-compose up --build
 ```
 
-This will start:
-- 3 backend servers (ports 9001, 9002, 9003)
-- 1 load balancer (port 8080)
-
 ## 🔍 How It Works
 
 ### Round-Robin Algorithm
