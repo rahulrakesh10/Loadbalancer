@@ -108,13 +108,6 @@ Or with custom configuration:
 go run main.go -config=config/servers.json -port=8080
 ```
 
-### Option 2: Docker Compose (Recommended for Production)
-
-Start everything with Docker Compose:
-```bash
-docker-compose up --build
-```
-
 ## 🔍 How It Works
 
 ### Round-Robin Algorithm
