@@ -96,18 +96,6 @@ chmod +x scripts/start-backends.sh
 ./scripts/start-backends.sh
 ```
 
-#### Step 2: Start Load Balancer
-
-In a new terminal:
-```bash
-go run main.go
-```
-
-Or with custom configuration:
-```bash
-go run main.go -config=config/servers.json -port=8080
-```
-
 ## 🔍 How It Works
 
 ### Round-Robin Algorithm
